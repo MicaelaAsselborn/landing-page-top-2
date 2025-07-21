@@ -5,6 +5,13 @@
     box-sizing: border-box;
     font-family: Roboto;
 }
+body{
+    width: 100vw;
+}
+#hero-container, footer{
+    background-color: #1F2937;
+    color: white;
+}
 a{
     color: white;
     text-decoration: none;
@@ -15,8 +22,9 @@ nav{
     align-items: center;
     padding: 10px 0;
 }
-section, footer{
-    padding: 0 100px;
+section{
+    width: 800px;
+    margin: 0 auto;
 }
 #logo{
     font-weight: bold;
@@ -24,7 +32,6 @@ section, footer{
     color: #F9FAF8;
     flex-grow: 1;
 }
-
 #hero-content{
     display: flex;
     padding: 100px 0;
@@ -47,16 +54,37 @@ h1{
     font-weight: bold;
     margin-top: 15px;
 }
-img{
+#hero img{
     width: 50%;
     height: 200px;
     background-color: grey;
     text-align: center;
     align-items: center;
 }
-#hero, footer{
-    background-color: #1F2937;
-    color: white;
+h2{
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    text-align: center;
+    margin: 40px;
+}
+#cards-container{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    text-align: center;
+}
+#cards-container img{
+    width: 150px;
+    border: 2px solid #3882F6;
+    border-radius: 8px;
+}
+.card{
+    width: 150px;
+    color: #1F2937;
+}
+#info{
+    padding-bottom: 100px;
 }
 footer{
     text-align: center;
